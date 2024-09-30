@@ -21,41 +21,73 @@ footer {
     display: inline-block;
 }
 
-header {
+.mazdaLogo {
+    background-image: url(mainPageImage/mazdaLogo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 8rem;
+    height: 8rem;
     display: flex;
-    padding: 10px;
-    padding-top: 0;
-    padding-left: 12.5vw;
-    padding-right: 12.5vw;
+    justify-content: right;
+    margin-left: 1.55rem;
+}
+
+header {
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+.navigation {
+    display: flex;
     justify-content: space-between;
 }
 
 nav ul {
-    list-style: none;
+    background-color: #ffffff;
+    list-style-type: none;
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 25px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 0;
+    row-gap: 0.8rem;
+    transition: all .3s linear;
 }
 
 nav ul li {
-    margin-left: 4.5vw;
+    
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #f5f5f5;
+nav ul li a {
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 1.2rem;
-    padding-right: 50px;
+    color: #1c1c1c;
+    text-decoration: none;
+    row-gap: 1.2rem;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.collapsibleContent {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .3s linear;
 }
 
-header #mazdaLogo img {
-    max-width: 6vw;
-    padding-left: 20px;
-    padding-top: 5px;
+.collapsible--expanded .collapsibleContent {
+    max-height: 100vh;
+    padding: 1rem 0;
+}
+
+.menuButtom {
     display: flex;
+    justify-content: right;
+}
+.menuButtom img {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem 2rem 0 0;
 }
 
 .hero {
@@ -86,12 +118,6 @@ header #mazdaLogo img {
     margin-bottom: 15px; 
 }
 
-@media (max-width: 768px) {
-    .heroText h1 {
-        font-size: 6vw;
-    }
-}
-
 .heroText p {
     font-size: 1.7em;
     font-weight: normal;
@@ -100,12 +126,6 @@ header #mazdaLogo img {
     padding-top: 10px;
     line-height: 1.4;
     margin: 0;
-}
-
-@media (max-width: 480px) {
-    .heroText h1 {
-        font-size: 8vw;
-    }
 }
 
 main .contenerForSliders {
@@ -134,8 +154,52 @@ main .slider img {
     height: 3.5rem;
     border-radius: 50%;
 }
+/*
 
+@media screen and (min-width: 1023px) {
+    header {
+        display: flex;
+        padding: 10px;
+        padding-top: 0;
+        padding-left: 12.5vw;
+        padding-right: 12.5vw;
+        justify-content: space-between;
+    }
 
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    nav ul li {
+        margin-left: 4.5vw;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #f5f5f5;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding-right: 50px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .mazdaLogo {
+        background-image: url(mainPageImage/mazdaLogo.png);
+        width: 7rem;
+        height: 7rem;
+        padding-left: 20px;
+        padding-top: 20px;
+        display: flex;
+    }
+
+    .heroImg {
+
+    }
+}
 
 
 

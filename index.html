@@ -5,15 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mazda Seria RX</title>
         <link rel="stylesheet" href="style.css">
-        <script src="skrypt.js"></script>
+        <script src="skrypt.js" defer></script>
     </head>
     <body>
         <header>
-            <div id="mazdaLogo">
-                <img src="mainPageImage/mazdaLogo.png" alt="Mazda Logo">
+            <div class="navigation">
+                <div class="mazdaLogo"></div>
+                <i class="menuButtom collapsible"><img src="mobileVersion/blackMenu.png" alt="Menu Buttom"></i>
             </div>
-            <nav>
-                <ul>
+            <nav id="target" class="collapsible collapsible--expanded">
+                <ul class="collapsibleContent">
                     <li><a href="#models">Modele</a></li>
                     <li><a href="#history">Historia</a></li>
                     <li><a href="#specs">Specyfikacja</a></li>
