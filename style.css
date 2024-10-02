@@ -44,15 +44,14 @@ header {
 }
 
 nav ul {
-    background-color: #000000ed;
+    background-color: #000000e0;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
-    padding: 1rem 0;
     row-gap: 0.8rem;
-    transition: all .1s linear;
+    transition: all .1s linear ;
     position: absolute;
     left: 0;
     right: 0;
@@ -67,7 +66,6 @@ nav ul li a {
     font-weight: bold;
     color: #ffffffc4;
     text-decoration: none;
-    row-gap: 1.3rem;
     text-transform: uppercase;
 }
 .collapsibleContent {
@@ -80,6 +78,7 @@ nav ul li a {
 .collapsible--expanded .collapsibleContent {
     max-height: 100vh;
     padding: 1rem 0;
+    margin-top: 0.5rem;
 }
 
 .menuButtom {
@@ -94,62 +93,77 @@ nav ul li a {
 }
 
 .hero {
-  
+  width: 100%;
+  height: 70vw;
 }
 
 .heroImg {
     width: 100%;
-    height: 23rem;
+    height: 100%;
     background-image: url(mainPageImage/MazdaRX7FrontScreenMobileVersion.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-/*
+
 .heroText h1 {
-    font-size: 3em;
+    font-size: 1.8rem;
     font-weight: bold; 
     color: #FFFFFF; 
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
     letter-spacing: 1.5px; 
-    margin-bottom: 15px; 
+    padding: 1rem 1rem;
 }
 
-.heroText p {
-    font-size: 1.7em;
-    font-weight: normal;
-    color: #FFFFFF;
-    text-shadow: 0px 0px 8px rgb(0 0 0);
-    padding-top: 10px;
-    line-height: 1.4;
-    margin: 0;
+.conteinerForButtoms {
+   position: absolute;
+   right: 2rem;
+   left: 2rem;
+   
 }
-*/
+
+.buttomsForSliders {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin: 4rem 2rem;
+}
+
+.sliderNavPrev {
+    display: flex;
+    width: 5vw;
+    height: 5vh;
+    background-color: #FFFFFF;
+    border-left:#523636;
+}
+
+.sliderNavNext {
+    display: flex;
+    width: 5vw;
+    height: 5vh;
+    background-color: #FFFFFF;
+    border-left:#523636;
+}
+
 main .contenerForSliders {
     display: flex;
-    padding: 1.5vw 17.2vw 1.5vw 18.8vw;
+    width: 50%;
+    height: 30vw;
+    margin: 2vh 25vw;
+    position: relative;
+    overflow: hidden;
+    
 }
 
 main .slider {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 1.6vw;
+   display: flex;
+   row-gap: 1rem;
 }
 
 main .slider img {
-    max-width: 20vw;
-    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.5);
-}
-
-.buttomForMoreInfo {
-    background-color: #1c1c1c;
-    position: fixed;
-    right: 2.25rem;
-    bottom: 2.25rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
 /*
 
