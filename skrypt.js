@@ -8,29 +8,36 @@ collapsible.forEach((item) => {
 });
 
 const sliderimage = document.querySelector(".slider");
-let numberOfPhoto = document.querySelectorAll(".slider_img").length;
+let numberOfPhoto = document.querySelectorAll(".slider img").length;
 let buttomNext = document.querySelector(".sliderNavNext");
 let buttomPrev = document.querySelector(".sliderNavPrev");
 let currentIndex = 0;
 
+
 function checkIndex() {
     if (currentIndex < 0) {
-        currentIndex = numberOfPhoto - 1;
+        currentIndex = numberOfPhoto - 1
     }
     if (currentIndex >= numberOfPhoto) {
-        currentIndex = 0;
+        currentIndex = 0
     }
 }
+console.log(currentIndex)
+console.log(numberOfPhoto)
 buttomNext.addEventListener("click", function() {
     currentIndex++;
-    sliderimage.style.transform = `translateX(-${currentIndex * 56}rem)`;
     checkIndex();
+    sliderimage.style.transform = `translateX(-${currentIndex * 100}%)`;
+    console.log(currentIndex);
+    console.log(numberOfPhoto);
 });    
 
 
 buttomPrev.addEventListener("click", function() {
     currentIndex--;
-    sliderimage.style.transform = `translateX(-${currentIndex * 56}rem)`;
     checkIndex();
+    sliderimage.style.transform = `translateX(-${currentIndex * 100}%)`;
+    console.log(currentIndex);
+    console.log(numberOfPhoto);
 });
 
