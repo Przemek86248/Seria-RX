@@ -187,6 +187,30 @@ main .slider img {
 .sliderNavPrev:active .sliderNavNext:active {
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
 }
+
+.engineSection {
+    width: 100%;
+    height: 70vw;
+}
+
+.wankelImg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(mainPageImage/engineWankel.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.wankelText h1 {
+    margin: 2rem 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1c1c1c; 
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
 /*
 
 @media screen and (min-width: 1023px) {
