@@ -211,6 +211,21 @@ main .slider img {
     color: #1c1c1c; 
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
+
+.wankelButtom {
+    display: flex;
+    position: absolute;
+    left: 1.5rem;
+    width: 8rem;
+    height: 3rem;
+    background-color: #1c1c1c;
+    margin: 7.5rem 0;
+}
+
+.wankelButtomText {
+    font-size: 1rem;
+    margin: 2px 3px;
+}
 /*
 
 @media screen and (min-width: 1023px) {
