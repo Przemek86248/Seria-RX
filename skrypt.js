@@ -1,3 +1,4 @@
+ // feature about burger activ menu for mobile 
 let collapsible = document.querySelectorAll(".collapsible");
 let targetElement = document.querySelector("#target")
 
@@ -6,7 +7,7 @@ collapsible.forEach((item) => {
         targetElement.classList.toggle("collapsible--expanded");
     });
 });
-
+ // feature about slider on the main page 
 const sliderimage = document.querySelector(".slider");
 let numberOfPhoto = document.querySelectorAll(".slider img").length;
 let buttomNext = document.querySelector(".sliderNavNext");
@@ -28,8 +29,6 @@ buttomNext.addEventListener("click", function() {
     currentIndex++;
     checkIndex();
     sliderimage.style.transform = `translateX(-${currentIndex * 100}%)`;
-    console.log(currentIndex);
-    console.log(numberOfPhoto);
 });    
 
 
@@ -37,7 +36,5 @@ buttomPrev.addEventListener("click", function() {
     currentIndex--;
     checkIndex();
     sliderimage.style.transform = `translateX(-${currentIndex * 100}%)`;
-    console.log(currentIndex);
-    console.log(numberOfPhoto);
 });
 

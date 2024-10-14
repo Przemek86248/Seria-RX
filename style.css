@@ -17,10 +17,6 @@ body {
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
 }
 
-footer {
-    display: inline-block;
-}
-
 .mazdaLogo {
     background-image: url(mainPageImage/mazdaLogo.png);
     background-size: 100% 100%;
@@ -55,10 +51,6 @@ nav ul {
     position: absolute;
     left: 0;
     right: 0;
-}
-
-nav ul li {
-    
 }
 
 nav ul li a {
@@ -215,63 +207,61 @@ main .slider img {
 .wankelButtom {
     display: flex;
     position: absolute;
-    left: 1.5rem;
+    left: 2.5rem;
     width: 8rem;
     height: 3rem;
     background-color: #1c1c1c;
     margin: 7.5rem 0;
+    align-items: center;
+    color: #ffffffcf;
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 80%);
 }
 
 .wankelButtomText {
+    letter-spacing: 2px;
+    text-transform: uppercase;
     font-size: 1rem;
-    margin: 2px 3px;
+    margin: 0 28px;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
-/*
 
-@media screen and (min-width: 1023px) {
-    header {
-        display: flex;
-        padding: 10px;
-        padding-top: 0;
-        padding-left: 12.5vw;
-        padding-right: 12.5vw;
-        justify-content: space-between;
+    
+
+@media (min-width: 768px) {
+    .mazdaLogo {
+        margin-top: 1.5rem;
+    }
+    
+    .menuButtom {
+        display: none;
     }
 
     nav ul {
-        list-style: none;
+        background-color: none;
+        list-style-type: none;
         display: flex;
-        padding-top: 50px;
-        padding-bottom: 25px;
+        flex-direction: row;
+        align-items: normal;
+        margin: 0;
+        row-gap: 0.8rem;
+        transition: none;
+        position: relative;
+        left: 0;
+        right: 0;
     }
-
-    nav ul li {
-        margin-left: 4.5vw;
-    }
-
+    
     nav ul li a {
-        text-decoration: none;
-        color: #f5f5f5;
+        font-size: 1.3rem;
         font-weight: bold;
-        font-size: 1.2rem;
-        padding-right: 50px;
+        color: #ffffffc4;
+        text-decoration: none;
         text-transform: uppercase;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
 
-    .mazdaLogo {
-        background-image: url(mainPageImage/mazdaLogo.png);
-        width: 7rem;
-        height: 7rem;
-        padding-left: 20px;
-        padding-top: 20px;
-        display: flex;
-    }
-
-    .heroImg {
-
+    .collapsibleContent {
+        overflow: visible;
     }
 }
-
 
 
