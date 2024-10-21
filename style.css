@@ -229,6 +229,10 @@ main .slider img {
     
 
 @media (min-width: 768px) {
+    header {
+        display: flex;
+    }
+
     .mazdaLogo {
         margin-top: 1.5rem;
     }
@@ -240,11 +244,12 @@ main .slider img {
     nav ul {
         background-color: none;
         list-style-type: none;
+        height: 50px;
         display: flex;
         flex-direction: row;
         align-items: normal;
-        margin: 0;
-        row-gap: 0.8rem;
+        margin:3rem 0 3rem 0;
+        row-gap: 2rem;
         transition: none;
         position: relative;
         left: 0;
@@ -257,6 +262,7 @@ main .slider img {
         color: #ffffffc4;
         text-decoration: none;
         text-transform: uppercase;
+        margin-left: 1rem;
     }
 
     .collapsibleContent {
