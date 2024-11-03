@@ -2,11 +2,23 @@
 let collapsible = document.querySelectorAll(".collapsible");
 let targetElement = document.querySelector("#target")
 
+function toggleClass () {
+    targetElement.classList.toggle("collapsible--expanded");
+}
+
 collapsible.forEach((item) => {
-    item.addEventListener("click", function() {
-        targetElement.classList.toggle("collapsible--expanded");
-    });
+    item.addEventListener("click", toggleClass);
 });
+
+function handleResize() {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        collapsible.forEach((item) => {
+            item.removeEventListener("click", toggleClass);
+        });
+}}
+
+window.addEventListener('resize', handleResize);
+handleResize();
  // feature about slider on the main page 
 const sliderimage = document.querySelector(".slider");
 let numberOfPhoto = document.querySelectorAll(".slider img").length;
@@ -22,9 +34,8 @@ function checkIndex() {
     if (currentIndex >= numberOfPhoto) {
         currentIndex = 0
     }
-}
-console.log(currentIndex)
-console.log(numberOfPhoto)
+}  
+
 buttomNext.addEventListener("click", function() {
     currentIndex++;
     checkIndex();
@@ -36,5 +47,5 @@ buttomPrev.addEventListener("click", function() {
     currentIndex--;
     checkIndex();
     sliderimage.style.transform = `translateX(-${currentIndex * 100}%)`;
-});
+});   
 
