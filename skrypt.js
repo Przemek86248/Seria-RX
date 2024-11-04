@@ -19,7 +19,10 @@ function handleResize() {
 
 window.addEventListener('resize', handleResize);
 handleResize();
+
+const carousel = new bootstrap.Carousel('#myCarousel')
  // feature about slider on the main page 
+ /*
 const sliderimage = document.querySelector(".slider");
 let numberOfPhoto = document.querySelectorAll(".slider img").length;
 let buttomNext = document.querySelector(".sliderNavNext");
@@ -48,4 +51,4 @@ buttomPrev.addEventListener("click", function() {
     checkIndex();
     sliderimage.style.transform = `translateX(-${currentIndex * 100}%)`;
 });   
-
+*/

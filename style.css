@@ -11,7 +11,7 @@ body {
         linear-gradient(to bottom, #1c1c1c, #454545);
         background-blend-mode: overlay;
     background-position: center;
-    background-size: auto;
+    background-size: auto !important;
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
     box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
@@ -21,8 +21,8 @@ body {
     background-image: url(mainPageImage/mazdaLogo.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
     display: flex;
     justify-content: right;
     margin-left: 3rem;
@@ -79,8 +79,8 @@ nav ul li a {
 }
 .menuButtom img {
     cursor: pointer;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     margin: 2rem 2rem 0 0;
 }
 
@@ -107,77 +107,13 @@ nav ul li a {
     padding: 1rem 1rem;
 }
 
-main .contenerForSliders {
-    display: flex;
-    padding: 1rem 0;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    position: relative;
+#carouselExampleCaptions {
+    width: 80%;
+    margin: 1rem auto 0 auto;
 }
 
-.hiddenPhoto {
-    margin: 0 auto;
-    width: 70vw;
-    overflow: hidden;
-    box-shadow: 0px 0px 14px 4px rgb(0 0 0 / 80%);
-}
-
-main .slider {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    transition: transform 0.5s ease-in-out;
-}
-
-main .slider img {
-    width: 100%;
-    height: 100%;
-}
-
-.buttomForSlider {
-    display: flex;
-    align-items: center;    
-    position: absolute;
-    width: 100%;
-
-}
-
-.sliderNavPrev {
-    display: flex;
-    position: absolute;
-    z-index: 20;
-    cursor: pointer;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-right: 30px solid rgb(0 0 0 / 66%);
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-    align-items: center;
-    margin: 0 0 0 1rem;
-}
-
-.sliderNavNext {
-    display: flex;
-    position: absolute;
-    cursor: pointer;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 30px solid rgb(0 0 0 / 66%);
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-    align-items: center;
-    margin: 0 1rem 0 0;
-}
-
-.sliderNavPrev:active .sliderNavNext:active{
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+.carousel-indicators {
+    margin-bottom: 0;
 }
 
 .engineSection {
@@ -315,17 +251,13 @@ main .slider img {
         padding: 3rem 2rem;
     }
 
-    
-.sliderNavPrev {
-    left: 20px;
-}
+    .sliderNavPrev {
+        left: 20px;
+    }
 
-.sliderNavNext {
-    right: 20px;
-}
-
-    
-
+    .sliderNavNext {
+        right: 20px;
+    }
 }
 
 
